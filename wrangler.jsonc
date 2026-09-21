@@ -1,0 +1,1 @@
+{   "name": "sacred-id-home",   "compatibility_date": "2026-09-20",   "assets": {     "directory": ".",     "html_handling": "auto-trailing-slash"   } }
