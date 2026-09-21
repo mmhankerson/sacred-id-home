@@ -1,0 +1,1879 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sacred Identity Studio",
+        "alternateName": "Sacred ID",
+        "url": "https://sacredidentitystudio.com/",
+        "logo": "https://sacredidentitystudio.com/logo-horizontal.png",
+        "email": "hello@sacredid.studio",
+        "description": "Business strategy, brand clarity, and intuitive insight for spiritual practitioners.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Roseville",
+          "addressRegion": "MN",
+          "addressCountry": "US"
+        },
+        "areaServed": "Worldwide",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61557349605270",
+          "https://www.instagram.com/sacredidstudio",
+          "https://www.alignable.com/roseville-mn/sacred-id?user=16213085"
+        ]
+      }
+    </script>
+    <title>Sacred Momentum Lab | Sacred Identity Studio</title>
+    <meta
+      name="description"
+      content="Sacred Momentum Lab is a weekly accountability container for spiritual practitioners who need steady support after the plan is clear."
+    />
+    <link rel="canonical" href="https://sacredidentitystudio.com/momentum-lab" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sacred Identity Studio" />
+    <meta property="og:url" content="https://sacredidentitystudio.com/momentum-lab" />
+    <meta property="og:title" content="Sacred Momentum Lab | Sacred Identity Studio" />
+    <meta property="og:description" content="Sacred Momentum Lab is a weekly accountability container for spiritual practitioners who need steady support after the plan is clear." />
+    <meta property="og:image" content="https://sacredidentitystudio.com/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sacred ID — strategy and intuition for spiritual practitioners." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sacred Momentum Lab | Sacred Identity Studio" />
+    <meta name="twitter:description" content="Sacred Momentum Lab is a weekly accountability container for spiritual practitioners who need steady support after the plan is clear." />
+    <meta name="twitter:image" content="https://sacredidentitystudio.com/og.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Sacred Momentum Lab for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sacred Momentum Lab is for practitioners who already have enough clarity to move, but want steady support while the business keeps evolving. It is for staying focused, making decisions, and keeping the work in motion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is Momentum Lab?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Momentum Lab runs for three months. We meet weekly so there is a consistent rhythm, protected time, and regular accountability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to complete Sacred Blueprint first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most clients start with Sacred Blueprint first so we have a clear plan. If you already have a clear direction, we can talk about whether Momentum Lab makes sense now."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do we work on during the weekly sessions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We work on the decisions that are most alive in the business: offers, messaging, visibility, website direction, systems, priorities, or what needs to be simplified."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of support happens inside Momentum Lab?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Momentum Lab is a practical accountability container. You meet weekly for three months with a small group so you have protected time, steady support, and a place to keep making clear decisions as the business moves forward."
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      @font-face {
+        font-family: "Fraunces";
+        src: url("/fraunces-300.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Fraunces";
+        src: url("/fraunces-400.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        src: url("/manrope-400.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        src: url("/manrope-700.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      :root {
+        color-scheme: dark;
+        --bg: #3f3f3f;
+        --surface: #313131;
+        --surface-2: #373737;
+        --ink: #f2efe9;
+        --muted: #d4c5a9;
+        --primary: #d4c5a9;
+        --on-primary: #111111;
+        --button-bg: #86d1cd;
+        --accent: #050b18;
+        --line: rgba(212, 197, 169, 0.24);
+        --grid: rgba(212, 197, 169, 0.2);
+        --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        --radius: 8px;
+        --pill: 9999px;
+        --max: 1240px;
+        /* fixed nav: top offset + pill height + breathing room */
+        --nav-clear: 138px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 84% 6%, rgba(212, 197, 169, 0.14), transparent 24rem),
+          linear-gradient(135deg, rgba(212, 197, 169, 0.06) 0 1px, transparent 1px 16px),
+          var(--bg);
+        background-size: auto, 18px 18px, auto;
+        color: var(--ink);
+        font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-rendering: geometricPrecision;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        pointer-events: none;
+        opacity: 0.28;
+        background-image:
+          linear-gradient(115deg, transparent 0 47%, rgba(212, 197, 169, 0.1) 48% 49%, transparent 50%),
+          radial-gradient(circle at 10% 0%, rgba(5, 11, 24, 0.42), transparent 32rem);
+        background-size: 22px 22px, auto;
+        mask-image: linear-gradient(to bottom, black, transparent 72%);
+      }
+
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 21;
+        pointer-events: none;
+        opacity: 0.045;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+        background-size: 200px 200px;
+        mix-blend-mode: overlay;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible {
+        outline: 2px solid rgba(212, 197, 169, 0.74);
+        outline-offset: 4px;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      blockquote {
+        margin-top: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      .display {
+        font-family: Fraunces, Georgia, "Times New Roman", serif;
+        font-weight: 300;
+        letter-spacing: -1.1px;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .page {
+        overflow: hidden;
+      }
+
+      .nav {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 40;
+        min-height: 0;
+        padding: 0;
+        background: transparent;
+        pointer-events: none;
+        transition:
+          opacity 260ms var(--ease-out),
+          transform 260ms var(--ease-out);
+        will-change: transform;
+      }
+
+      .nav.is-hidden {
+        opacity: 0;
+        transform: translateY(calc(-100% - 72px));
+      }
+
+      .nav.is-scrolled {
+        min-height: 0;
+        padding: 0;
+      }
+
+      .nav-inner {
+        position: relative;
+        width: min(1080px, calc(100% - 200px));
+        min-height: 60px;
+        margin: 0 auto;
+        padding: 8px 8px 8px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        border: 1px solid rgba(212, 197, 169, 0.28);
+        border-radius: var(--pill);
+        background: rgba(49, 49, 49, 0.82);
+        box-shadow: 0 18px 48px rgba(5, 11, 24, 0.28);
+        backdrop-filter: blur(18px);
+        pointer-events: auto;
+        transition:
+          background-color 260ms var(--ease-out),
+          border-color 260ms var(--ease-out),
+          box-shadow 260ms var(--ease-out),
+          min-height 260ms var(--ease-out);
+      }
+
+      .nav.is-scrolled .nav-inner {
+        min-height: 60px;
+        border-color: rgba(212, 197, 169, 0.28);
+        background: rgba(49, 49, 49, 0.82);
+        box-shadow: 0 18px 48px rgba(5, 11, 24, 0.28);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        width: clamp(130px, 14vw, 184px);
+        flex: 0 0 auto;
+      }
+
+      .brand-logo {
+        width: 100%;
+        height: auto;
+        transition: transform 260ms var(--ease-out), opacity 260ms var(--ease-out);
+      }
+
+      .brand:hover .brand-logo {
+        opacity: 0.86;
+        transform: translateY(-1px);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--muted);
+        font-size: 0.66rem;
+        text-transform: uppercase;
+      }
+
+      .nav-links a:not(.button) {
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 16px;
+        border-radius: var(--pill);
+        transition:
+          background-color 180ms var(--ease-out),
+          color 180ms var(--ease-out),
+          transform 180ms var(--ease-out);
+      }
+
+      .nav-links a:hover,
+      .nav-links a[aria-current="page"] {
+        color: var(--ink);
+      }
+
+      .nav-links a:not(.button):hover,
+      .nav-links a[aria-current="page"] {
+        background: rgba(212, 197, 169, 0.1);
+        transform: translateY(-1px);
+      }
+
+      .nav-links a.nav-mobile-only {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: none;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        background: rgba(5, 11, 24, 0.18);
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      .nav-toggle span {
+        position: absolute;
+        width: 16px;
+        height: 1px;
+        background: currentColor;
+        transition:
+          transform 220ms var(--ease-out),
+          opacity 220ms var(--ease-out);
+      }
+
+      .nav-toggle span:first-child {
+        transform: translateY(-4px);
+      }
+
+      .nav-toggle span:last-child {
+        transform: translateY(4px);
+      }
+
+      .nav.is-open .nav-toggle span:first-child {
+        transform: rotate(45deg);
+      }
+
+      .nav.is-open .nav-toggle span:last-child {
+        transform: rotate(-45deg);
+      }
+
+      .button {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 46px;
+        padding: 12px 52px 12px 32px;
+        border: 1.5px solid var(--button-bg);
+        border-radius: var(--pill);
+        background: var(--button-bg);
+        color: var(--on-primary);
+        font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        line-height: 1;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        transition:
+          transform 180ms var(--ease-out),
+          border-color 600ms var(--ease-out),
+          border-radius 600ms var(--ease-out),
+          color 600ms var(--ease-out);
+      }
+
+      .button::before,
+      .button::after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        width: 9px;
+        height: 9px;
+        border-top: 1.5px solid currentColor;
+        border-right: 1.5px solid currentColor;
+        transition:
+          transform 640ms var(--ease-out),
+          opacity 640ms var(--ease-out);
+      }
+
+      .button::before {
+        left: 18px;
+        opacity: 0;
+        transform: translate(-48px, -50%) rotate(45deg);
+      }
+
+      .button::after {
+        right: 26px;
+        opacity: 1;
+        transform: translate(0, -50%) rotate(45deg);
+      }
+
+      .button > span:not(.button-fill) {
+        position: relative;
+        z-index: 2;
+        transform: translateX(-6px);
+        transition: transform 640ms var(--ease-out);
+      }
+
+      .button .button-fill {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        background: var(--accent);
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.045);
+        transition:
+          transform 640ms var(--ease-out),
+          opacity 640ms var(--ease-out);
+      }
+
+      .button:hover {
+        color: var(--ink);
+        border-color: transparent;
+        border-radius: 12px;
+        transform: translateY(-1px);
+      }
+
+      .button:hover::before {
+        opacity: 1;
+        transform: translate(0, -50%) rotate(45deg);
+      }
+
+      .button:hover::after {
+        opacity: 0;
+        transform: translate(48px, -50%) rotate(45deg);
+      }
+
+      .button:hover > span:not(.button-fill) {
+        transform: translateX(8px);
+      }
+
+      .button:hover .button-fill {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .button:active {
+        transform: translateY(1px) scale(0.95);
+      }
+
+      .nav-links .button {
+        min-height: 42px;
+        padding: 12px 46px 12px 28px;
+        font-size: 0.62rem;
+      }
+
+      .section {
+        width: min(var(--max), calc(100% - 40px));
+        margin: 0 auto;
+        padding: 112px 0;
+      }
+
+      .eyebrow,
+      .pill,
+      .card-label {
+        margin: 0;
+        color: var(--primary);
+        font-size: 0.66rem;
+        letter-spacing: 3px;
+        line-height: 1.35;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 34px;
+        padding: 9px 16px;
+        border-radius: var(--pill);
+      }
+
+      .lead {
+        max-width: 720px;
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+        font-weight: 400;
+        letter-spacing: 2.2px;
+      }
+
+      .momentum-hero {
+        width: min(1500px, calc(100% - 40px));
+        min-height: calc(100dvh - 72px);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.78fr);
+        gap: 1px;
+        border-left: 1px solid var(--line);
+        border-right: 1px solid var(--line);
+        background: var(--grid);
+        box-shadow: var(--shadow);
+      }
+
+      .momentum-copy,
+      .momentum-image {
+        min-height: calc(100dvh - 72px);
+      }
+
+      .momentum-copy {
+        padding: clamp(132px, 10vw, 174px) clamp(36px, 5vw, 84px) clamp(48px, 6vw, 86px);
+        display: grid;
+        align-content: center;
+        align-content: safe center;
+        gap: 28px;
+        background:
+          radial-gradient(circle at 12% 16%, rgba(212, 197, 169, 0.14), transparent 22rem),
+          linear-gradient(130deg, rgba(212, 197, 169, 0.12), transparent 48%),
+          var(--surface);
+      }
+
+      .momentum-copy h1 {
+        max-width: 870px;
+        margin-bottom: 0;
+        font-size: clamp(3.8rem, 7.2vw, 8.1rem);
+        line-height: 0.9;
+      }
+
+      .momentum-image {
+        position: relative;
+        background: url("/momentum-lab-table.png") center / cover;
+      }
+
+      .momentum-image-card {
+        position: absolute;
+        right: clamp(18px, 3vw, 36px);
+        bottom: clamp(18px, 3vw, 36px);
+        width: min(380px, calc(100% - 36px));
+        padding: clamp(20px, 3vw, 30px);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(5, 11, 24, 0.76);
+        box-shadow: var(--shadow);
+      }
+
+      .momentum-image-card p {
+        margin: 0;
+        color: var(--ink);
+        font-family: Fraunces, Georgia, "Times New Roman", serif;
+        font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+        font-weight: 300;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .momentum-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.1fr);
+        gap: clamp(36px, 6vw, 92px);
+        align-items: start;
+      }
+
+      .momentum-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--grid);
+        overflow: hidden;
+      }
+
+      .momentum-card {
+        min-height: 300px;
+        padding: clamp(24px, 3vw, 38px);
+        background: var(--surface);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .momentum-card h3 {
+        margin-bottom: 18px;
+        font-size: clamp(1.8rem, 3vw, 3rem);
+        line-height: 1;
+      }
+
+      .momentum-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.84rem;
+        letter-spacing: 2px;
+      }
+
+      .momentum-panel {
+        width: min(1280px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: clamp(36px, 6vw, 80px);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(120deg, rgba(212, 197, 169, 0.14), transparent 55%),
+          var(--surface);
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.55fr);
+        gap: clamp(32px, 5vw, 72px);
+        align-items: center;
+        box-shadow: var(--shadow);
+      }
+
+      .momentum-panel h2 {
+        max-width: 760px;
+        margin-bottom: 24px;
+        font-size: clamp(3.2rem, 6.4vw, 6.6rem);
+        line-height: 0.95;
+      }
+
+      .momentum-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 18px;
+      }
+
+      .momentum-list li {
+        padding-left: 34px;
+        position: relative;
+        color: var(--muted);
+        font-size: 0.88rem;
+        letter-spacing: 2px;
+      }
+
+      .momentum-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.72em;
+        width: 18px;
+        height: 1px;
+        background: var(--primary);
+      }
+
+      .momentum-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .momentum-actions .secondary {
+        background: transparent;
+        color: var(--primary);
+      }
+
+      .momentum-actions .secondary .button-fill {
+        background: var(--primary);
+      }
+
+      .momentum-actions .secondary:hover {
+        color: var(--on-primary);
+      }
+
+      .about-hero {
+        width: min(1500px, calc(100% - 40px));
+        min-height: calc(100dvh - 72px);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.76fr);
+        gap: 1px;
+        background: var(--grid);
+        border-left: 1px solid var(--line);
+        border-right: 1px solid var(--line);
+        box-shadow: var(--shadow);
+      }
+
+      .about-hero-copy,
+      .about-hero-image {
+        min-height: calc(100dvh - 72px);
+      }
+
+      .about-hero-copy {
+        padding: max(clamp(104px, 8vw, 132px), var(--nav-clear)) clamp(36px, 5vw, 80px)
+          clamp(36px, 5vw, 80px);
+        display: grid;
+        align-content: center;
+        align-content: safe center;
+        gap: 28px;
+        background:
+          linear-gradient(130deg, rgba(212, 197, 169, 0.12), transparent 48%),
+          var(--surface);
+      }
+
+      .about-hero h1 {
+        max-width: 820px;
+        margin-bottom: 0;
+        font-size: clamp(3.6rem, 6.2vw, 7.4rem);
+        line-height: 0.9;
+      }
+
+      .about-hero-image {
+        position: relative;
+        background: url("/matt-laptop-wall.png") center / cover;
+      }
+
+      .quote-card {
+        align-self: end;
+        max-width: 520px;
+        padding: clamp(22px, 3vw, 34px);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(5, 11, 24, 0.72);
+        box-shadow: var(--shadow);
+      }
+
+      .quote-card blockquote {
+        margin-bottom: 14px;
+        color: var(--ink);
+        font-family: Fraunces, Georgia, "Times New Roman", serif;
+        font-size: clamp(1.55rem, 2.8vw, 2.6rem);
+        font-weight: 300;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .quote-card p {
+        margin-bottom: 0;
+        font-size: 0.62rem;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.62fr) minmax(0, 1.18fr);
+        gap: clamp(36px, 6vw, 92px);
+        align-items: center;
+      }
+
+      .sticky-heading {
+        position: sticky;
+        top: 104px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .sticky-heading h2,
+      .full-heading h2 {
+        max-width: 720px;
+        margin-bottom: 0;
+        font-size: clamp(3rem, 6vw, 6.2rem);
+        line-height: 0.94;
+      }
+
+      .copy-stack {
+        display: grid;
+        gap: 20px;
+      }
+
+      .copy-stack p {
+        margin: 0;
+        max-width: 760px;
+        font-size: 0.92rem;
+        letter-spacing: 2px;
+      }
+
+      .belief-grid,
+      .lens-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        background: var(--grid);
+        border: 1px solid var(--line);
+      }
+
+      .lens-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 1fr;
+        gap: 1px;
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+
+      .belief-grid-wrap {
+        margin-top: 48px;
+      }
+
+      .belief-card,
+      .lens-card {
+        min-height: 300px;
+        padding: clamp(24px, 3vw, 38px);
+        border-radius: var(--radius);
+        background: var(--surface);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .lens-card {
+        min-height: 300px;
+        border-radius: 0;
+      }
+
+      .belief-card h3,
+      .lens-card h3 {
+        margin-bottom: 18px;
+        font-size: clamp(1.8rem, 3vw, 3.15rem);
+        line-height: 1;
+      }
+
+      .belief-card p,
+      .lens-card p {
+        margin-bottom: 0;
+        font-size: 0.84rem;
+        letter-spacing: 2px;
+      }
+
+      .feature-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.84fr) minmax(300px, 0.76fr);
+        gap: 1px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: 1px solid var(--line);
+        background: var(--grid);
+      }
+
+      .feature-image {
+        min-height: 620px;
+        background: url("/matt-window-smile.png") center / cover;
+        filter: saturate(0.72) contrast(1.08) brightness(0.84);
+      }
+
+      .feature-copy {
+        padding: clamp(30px, 5vw, 72px);
+        background: var(--surface);
+        display: grid;
+        align-content: center;
+        align-content: safe center;
+        gap: 26px;
+      }
+
+      .feature-copy h2 {
+        margin-bottom: 0;
+        font-size: clamp(3rem, 5.6vw, 5.8rem);
+        line-height: 0.94;
+      }
+
+      .full-heading {
+        display: grid;
+        justify-items: center;
+        gap: 22px;
+        text-align: center;
+      }
+
+      .full-heading .lead {
+        margin: 0 auto;
+      }
+
+      .faq-heading {
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .faq-heading .lead {
+        margin-bottom: 0;
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .faq-item {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(135deg, rgba(212, 197, 169, 0.08), transparent 48%),
+          var(--surface);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        transition:
+          border-color 220ms var(--ease-out),
+          background-color 220ms var(--ease-out);
+      }
+
+      .faq-item[open] {
+        border-color: rgba(212, 197, 169, 0.42);
+      }
+
+      .faq-item summary {
+        min-height: 88px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        list-style: none;
+        cursor: pointer;
+      }
+
+      .faq-item summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-question {
+        color: var(--ink);
+        font-family: Fraunces, Georgia, "Times New Roman", serif;
+        font-size: clamp(1.55rem, 2.7vw, 2.75rem);
+        font-weight: 400;
+        line-height: 1.02;
+        letter-spacing: -0.03em;
+      }
+
+      .faq-icon {
+        position: relative;
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--line);
+        border-radius: var(--pill);
+      }
+
+      .faq-icon::before,
+      .faq-icon::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 1px;
+        border-radius: 1px;
+        background: var(--primary);
+        transform: translate(-50%, -50%);
+        transition: transform 220ms var(--ease-out);
+      }
+
+      .faq-icon::after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+
+      .faq-item[open] .faq-icon::after {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      .faq-answer {
+        max-width: 720px;
+        padding: 0 24px 26px;
+        color: rgba(242, 239, 233, 0.74);
+        font-size: 0.88rem;
+        line-height: 1.72;
+        letter-spacing: 1.2px;
+      }
+
+      .faq-answer p {
+        margin-bottom: 0;
+      }
+
+      .closing {
+        width: min(1280px, calc(100% - 40px));
+        margin: 0 auto 24px;
+        padding: clamp(36px, 6vw, 80px);
+        border: 1px solid var(--line);
+        background:
+          linear-gradient(120deg, rgba(212, 197, 169, 0.15), transparent 55%),
+          linear-gradient(135deg, rgba(212, 197, 169, 0.08) 0 1px, transparent 1px 13px),
+          var(--surface);
+        background-size: auto, 14px 14px, auto;
+        display: grid;
+        gap: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .closing h2 {
+        max-width: 820px;
+        margin-bottom: 0;
+        font-size: clamp(3.2rem, 6.4vw, 6.6rem);
+        line-height: 0.95;
+      }
+
+      .closing .button {
+        justify-self: start;
+        width: fit-content;
+      }
+
+      .footer {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 64px 0 32px;
+        border-top: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 82% 0%, rgba(212, 197, 169, 0.12), transparent 28rem),
+          var(--surface);
+        overflow: hidden;
+      }
+
+      .footer-shell {
+        width: min(var(--max), calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .footer-halves {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.55fr) minmax(0, 1fr);
+        gap: clamp(44px, 7vw, 96px);
+        align-items: start;
+      }
+
+      .footer-left {
+        display: grid;
+        gap: 40px;
+      }
+
+      .footer-logo-small {
+        width: min(230px, 70vw);
+        height: auto;
+        filter: brightness(0) invert(94%) sepia(8%) saturate(325%) hue-rotate(351deg) brightness(101%) contrast(91%);
+      }
+
+      .footer p {
+        font-size: 0.84rem;
+        letter-spacing: 2px;
+      }
+
+      .footer-right {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        gap: clamp(30px, 5vw, 72px);
+        justify-self: end;
+        width: min(720px, 100%);
+      }
+
+      .footer-column {
+        display: grid;
+        gap: 24px;
+        align-content: start;
+      }
+
+      .footer-column-title {
+        margin: 0;
+        color: rgba(212, 197, 169, 0.54);
+        font-size: 0.62rem;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      .footer-links-column {
+        display: grid;
+        gap: 12px;
+      }
+
+      .footer-link {
+        color: var(--ink);
+        font-size: clamp(1rem, 1vw, 1rem);
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: 1.25;
+        transition: color 180ms ease;
+      }
+
+      .footer-link:hover {
+        color: var(--primary);
+      }
+
+      .footer-logo-big {
+        width: 100%;
+        height: auto;
+        margin: clamp(56px, 9vw, 100px) 0 40px;
+        filter: brightness(0) invert(94%) sepia(8%) saturate(325%) hue-rotate(351deg) brightness(101%) contrast(91%);
+      }
+
+      .footer-bottom-tile {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 28px 0;
+      }
+
+      .footer-bottom-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .footer-last-block,
+      .footer-rights-wrap,
+      .footer-social-wrap {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .footer-social-wrap {
+        gap: 14px;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(242, 239, 233, 0.52);
+        font-size: 0.64rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: color 180ms ease;
+      }
+
+      .social-link.mail-link::before {
+        content: "";
+        width: 14px;
+        height: 10px;
+        border: 1px solid currentColor;
+        border-radius: 1px;
+        background:
+          linear-gradient(35deg, transparent 47%, currentColor 49% 51%, transparent 53%) left / 50% 100% no-repeat,
+          linear-gradient(145deg, transparent 47%, currentColor 49% 51%, transparent 53%) right / 50% 100% no-repeat;
+        opacity: 0.9;
+      }
+
+      .social-link:hover {
+        color: var(--ink);
+      }
+
+      .footer-bottom-message {
+        padding-top: 28px;
+      }
+
+      .footer-bottom-message p,
+      .footer-note,
+      .footer-bottom-wrap {
+        color: rgba(212, 197, 169, 0.62);
+        font-size: 0.66rem;
+        letter-spacing: 1.8px;
+      }
+
+      .field {
+        display: grid;
+        gap: 8px;
+      }
+
+      .field label {
+        color: var(--ink);
+        font-size: 0.68rem;
+        letter-spacing: 2.4px;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 700ms var(--ease-out),
+          transform 700ms var(--ease-out);
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .nav-inner {
+          width: min(100% - 112px, var(--max));
+        }
+
+        .section,
+        .about-hero,
+        .momentum-hero,
+        .momentum-panel,
+        .closing,
+        .footer-shell {
+          width: min(100% - 32px, var(--max));
+        }
+
+        .about-hero,
+        .momentum-hero,
+        .momentum-grid,
+        .momentum-panel,
+        .story-grid,
+        .feature-panel {
+          grid-template-columns: 1fr;
+        }
+
+        .about-hero-copy,
+        .momentum-copy,
+        .about-hero-image {
+          min-height: auto;
+        }
+
+        .momentum-image,
+        .about-hero-image,
+        .feature-image {
+          min-height: 520px;
+        }
+
+        .sticky-heading {
+          position: relative;
+          top: auto;
+        }
+
+        .faq-heading {
+          max-width: none;
+        }
+
+        .belief-grid,
+        .lens-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .lens-card:first-child {
+          grid-row: auto;
+        }
+      }
+
+      @media (max-width: 680px) {
+        :root {
+          --nav-clear: 100px;
+        }
+
+        body {
+          letter-spacing: 2.2px;
+        }
+
+        .nav {
+          top: 18px;
+          min-height: 0;
+          padding: 0;
+        }
+
+        .nav-inner {
+          width: min(calc(100% - 72px), 1040px);
+          min-height: 54px;
+          padding: 7px 7px 7px 14px;
+        }
+
+        .brand {
+          width: 124px;
+        }
+
+        .nav-toggle {
+          position: relative;
+          display: inline-flex;
+          flex: 0 0 auto;
+        }
+
+        .nav-links {
+          position: absolute;
+          top: calc(100% + 10px);
+          left: 0;
+          right: 0;
+          display: grid;
+          gap: 6px;
+          padding: 10px;
+          border: 1px solid rgba(212, 197, 169, 0.28);
+          border-radius: 22px;
+          background: rgba(37, 37, 37, 0.96);
+          box-shadow: var(--shadow);
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-8px);
+          pointer-events: none;
+          transition:
+            opacity 220ms var(--ease-out),
+            visibility 220ms var(--ease-out),
+            transform 220ms var(--ease-out);
+        }
+
+        .nav.is-open .nav-links {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+
+        .nav-links a.nav-mobile-only {
+          display: inline-flex;
+        }
+
+        .nav-links a:not(.button),
+        .nav-links .button {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .button {
+          min-height: 43px;
+          padding: 0 14px;
+          font-size: 0.62rem;
+          letter-spacing: 1.8px;
+        }
+
+        .nav-links .button {
+          padding: 12px 46px 12px 28px;
+        }
+
+        .section {
+          padding: 78px 0;
+        }
+
+        .about-hero-copy,
+        .momentum-copy,
+        .feature-copy {
+          padding: 32px 20px;
+        }
+
+        .momentum-copy,
+        .about-hero-copy {
+          padding-top: 96px;
+        }
+
+        .momentum-copy h1,
+        .momentum-panel h2,
+        .about-hero h1 {
+          font-size: clamp(3rem, 15vw, 4.8rem);
+          line-height: 0.92;
+        }
+
+        .momentum-cards {
+          grid-template-columns: 1fr;
+        }
+
+        .faq-item summary {
+          min-height: 76px;
+          padding: 20px;
+          gap: 18px;
+        }
+
+        .faq-answer {
+          padding: 0 20px 22px;
+        }
+
+        .momentum-image,
+        .about-hero-image,
+        .feature-image {
+          min-height: 390px;
+        }
+      }
+      /* Shared homepage footer overrides */
+
+      .signup {
+        display: grid;
+        gap: 14px;
+        max-width: 340px;
+      }
+
+      .form-status {
+        min-height: 1.4em;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.68rem;
+        opacity: 0;
+        transform: translateY(4px);
+        transition:
+          opacity 260ms var(--ease-out),
+          transform 260ms var(--ease-out);
+      }
+
+      .signup.is-complete .form-status {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .signup.is-complete .button {
+        transform: translateY(-1px);
+      }
+
+      input {
+        width: 100%;
+        min-height: 48px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--surface);
+        color: var(--ink);
+        padding: 0 18px;
+        font: inherit;
+        font-size: 0.72rem;
+      }
+
+      input::placeholder {
+        color: rgba(212, 197, 169, 0.62);
+        opacity: 1;
+      }
+
+      input:focus {
+        border-color: rgba(212, 197, 169, 0.58);
+        outline: none;
+      }
+
+      @media (max-width: 1000px) {
+        .footer-shell {
+          width: min(100% - 32px, var(--max));
+        }
+
+        .footer-halves {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-right {
+          justify-self: stretch;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .footer {
+          padding: 48px 0 24px;
+        }
+
+        .footer-left {
+          gap: 32px;
+        }
+
+        .footer-right {
+          grid-template-columns: 1fr;
+          gap: 34px;
+        }
+
+        .footer-column {
+          gap: 16px;
+        }
+
+        .footer-logo-big {
+          margin-top: 56px;
+          margin-bottom: 28px;
+        }
+
+        .footer-bottom-tile {
+          padding: 24px 0;
+        }
+
+        .footer-bottom-wrap,
+        .footer-last-block,
+        .footer-rights-wrap {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="top" class="page">
+      <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-inner">
+          <a aria-label='Sacred ID home' class='brand' href='/'>
+            <img class="brand-logo" src="/logo-horizontal.png" alt="Sacred ID" width="375" height="60" />
+          </a>
+          <div class="nav-links">
+            <a class='nav-mobile-only' href='/'>Home</a>
+            <a class='nav-mobile-only' href='/works'>Works</a>
+            <a class='nav-mobile-only' href='/about'>About</a>
+            <a class='nav-mobile-only' href='/sacred-blueprint'>Sacred Blueprint</a>
+            <a class="nav-mobile-only" href="mailto:hello@sacredid.studio">Email</a>
+            <a class="button" href="https://sacredid.bloom.io/fit"><span>Request a Fit Call</span><span class="button-fill" aria-hidden="true"></span></a>
+          </div>
+          <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+
+      <main>
+        <section class="momentum-hero" aria-label="Sacred Momentum Lab">
+          <div class="momentum-copy reveal">
+            <p class="eyebrow">Sacred Momentum Lab</p>
+            <h1>Ongoing guidance for the business you are becoming.</h1>
+            <p class="lead">
+              For when the direction is clear enough to move, but you still need a steady rhythm, practical discernment, and another set of eyes while the business keeps evolving. We meet weekly for three months so the work stays focused, grounded, and in motion.
+            </p>
+            <div class="momentum-actions">
+              <a class="button" href="https://sacredid.bloom.io/fit"><span>Request a Fit Call</span><span class="button-fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
+          <div class="momentum-image reveal" role="img" aria-label="Hands writing strategy notes at a dark studio table.">
+            <div class="momentum-image-card">
+              <p>Weekly support for staying clear, focused, and in motion.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section momentum-grid" aria-label="Who Momentum Lab is for">
+          <aside class="sticky-heading reveal">
+            <span class="pill">When it fits</span>
+            <h2>You do not need another full diagnosis. You need steady momentum.</h2>
+            <p class="lead">Momentum Lab is not the first step for everyone. It is for clients who already have enough clarity to keep moving and need support making aligned decisions as the business changes.</p>
+          </aside>
+          <div class="momentum-cards">
+            <article class="momentum-card reveal">
+              <p class="card-label">01</p>
+              <div>
+                <h3>You have a plan, but life keeps shifting.</h3>
+                <p>We keep the work current when your capacity, audience, offers, or timing changes.</p>
+              </div>
+            </article>
+            <article class="momentum-card reveal">
+              <p class="card-label">02</p>
+              <div>
+                <h3>You need help choosing what matters now.</h3>
+                <p>We sort the next decision from the noise so the business does not become scattered again.</p>
+              </div>
+            </article>
+            <article class="momentum-card reveal">
+              <p class="card-label">03</p>
+              <div>
+                <h3>You need protected time to keep choosing clearly.</h3>
+                <p>The group gives you a regular place to name what matters, decide what is next, and stay with it.</p>
+              </div>
+            </article>
+            <article class="momentum-card reveal">
+              <p class="card-label">04</p>
+              <div>
+                <h3>You move better with rhythm.</h3>
+                <p>The point is not pressure. It is a consistent container where the business can stay alive and coherent.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="momentum-panel reveal" aria-label="How Momentum Lab works">
+          <div>
+            <p class="eyebrow">The container</p>
+            <h2>A weekly place to bring the business back into focus.</h2>
+            <p class="lead">
+              Each session meets the business where it is. We review what is moving, what is stuck, what needs to be decided, and what wants to emerge next.
+            </p>
+          </div>
+          <ul class="momentum-list">
+            <li>Weekly group support and accountability</li>
+            <li>Offer, message, website, or visibility decisions</li>
+            <li>Accountability without forcing misaligned action</li>
+            <li>Clear next steps after each session</li>
+          </ul>
+        </section>
+
+        <section class="section momentum-grid" aria-label="How to begin">
+          <aside class="sticky-heading reveal">
+            <span class="pill">How to begin</span>
+            <h2>Most clients start with Sacred Blueprint first.</h2>
+          </aside>
+          <div class="copy-stack reveal">
+            <p>Sacred Blueprint gives us the initial read: what is working, what is unclear, what needs to become visible, and what belongs in the next 90 days.</p>
+            <p>After that, Momentum Lab can become the ongoing support structure if steady guidance is the right next step.</p>
+            <p>If you already have a clear plan and need a place to keep refining decisions, we can talk about whether Momentum Lab makes sense now.</p>
+          </div>
+        </section>
+
+        <section class="section momentum-grid faq" aria-label="Sacred Momentum Lab frequently asked questions">
+          <aside class="sticky-heading faq-heading reveal">
+            <span class="pill">FAQ</span>
+            <h2>Questions before you step into the Lab.</h2>
+            <p class="lead">The Lab is simpler than a full rebuild. It gives your business a weekly rhythm, a clear place to bring decisions, and accountability that keeps the work moving.</p>
+          </aside>
+          <div class="faq-list reveal" data-faq-list>
+            <details class="faq-item" open>
+              <summary>
+                <span class="faq-question">Who is Sacred Momentum Lab for?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Sacred Momentum Lab is for practitioners who already have enough clarity to move, but want steady support while the business keeps evolving. It is for staying focused, making decisions, and keeping the work in motion.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-question">How long is Momentum Lab?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Momentum Lab runs for three months. We meet weekly so there is a consistent rhythm, protected time, and regular accountability.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-question">Do I need to complete Sacred Blueprint first?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Most clients start with Sacred Blueprint first so we have a clear plan. If you already have a clear direction, we can talk about whether Momentum Lab makes sense now.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-question">What do we work on during the weekly sessions?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>We work on the decisions that are most alive in the business: offers, messaging, visibility, website direction, systems, priorities, or what needs to be simplified.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-question">What kind of support happens inside Momentum Lab?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>Momentum Lab is a practical accountability container. You meet weekly for three months with a small group so you have protected time, steady support, and a place to keep making clear decisions as the business moves forward.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="closing reveal" aria-label="Momentum Lab next step">
+          <p class="eyebrow">Next step</p>
+          <h2>Bring the business back into a steady rhythm.</h2>
+          <p class="lead">
+            We will look at where you are, what is already clear, and whether Momentum Lab is the right container for this season of your work.
+          </p>
+          <a class="button" href="https://sacredid.bloom.io/fit"><span>Request a Fit Call</span><span class="button-fill" aria-hidden="true"></span></a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-shell">
+          <div class="footer-halves">
+            <div class="footer-left">
+              <a aria-label='Sacred ID home' href='/#top'>
+                <img
+                  class="footer-logo-small"
+                  src="/sacred-ID.gif"
+                  alt="Sacred ID"
+                  width="3208"
+                  height="641"
+                  loading="lazy"
+                />
+              </a>
+              <form class="signup" method="POST" action="https://formspree.io/f/xdenweag">
+                <input type="hidden" name="_subject" value="New Sacred ID signup" />
+                <div class="field">
+                  <label for="email">Receive Sacred ID updates</label>
+                  <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required />
+                </div>
+                <button class="button" type="submit"><span>Join</span><span class="button-fill" aria-hidden="true"></span></button>
+                <p class="footer-note">Your information is never disclosed to third parties.</p>
+                <p class="form-status" aria-live="polite"></p>
+              </form>
+            </div>
+            <nav class="footer-right" aria-label="Footer navigation">
+              <div class="footer-column">
+                <p class="footer-column-title">Main pages</p>
+                <div class="footer-links-column">
+                  <a class='footer-link' href='/#top'>Home</a>
+                  <a class='footer-link' href='/works'>Works</a>
+                  <a class='footer-link' href='/about'>About</a>
+                  <a class='footer-link' href='/contact'>Contact</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <p class="footer-column-title">Offerings</p>
+                <div class="footer-links-column">
+                  <a class='footer-link' href='/sacred-blueprint'>Sacred Blueprint</a>
+                  <a class='footer-link' href='/momentum-lab'>Sacred Momentum Lab</a>
+                  <a class='footer-link' href='/build-what-is-next'>Build What is Next</a>
+                  <a class='footer-link' href='/site-management'>Site Management</a>
+                  <a class='footer-link' href='/virtual-photo-shoot'>Virtual Photo Shoot</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <p class="footer-column-title">Contact</p>
+                <div class="footer-links-column">
+                  <a class="footer-link" href="https://sacredid.bloom.io/fit">Request a Fit Call</a>
+                  <a class="footer-link" href="mailto:hello@sacredid.studio">Email</a>
+                  <a class="footer-link" href="https://sacredidentitystudio.com/">sacredID.studio</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <img
+            class="footer-logo-big"
+            src="/sacred-ID.gif"
+            alt="Sacred ID"
+            width="3208"
+            height="641"
+            loading="lazy"
+          />
+          <div class="footer-bottom-tile">
+            <div class="footer-bottom-wrap">
+              <div class="footer-last-block">
+                <div class="footer-rights-wrap">
+                  <div class="footer-social-wrap" aria-label="Contact links">
+                    <a class="social-link mail-link" href="mailto:hello@sacredid.studio">Email</a>
+                  </div>
+                  <span>Copyright 2026 Sacred Identity Studio</span>
+                </div>
+              </div>
+              <span>sacredID.studio</span>
+            </div>
+          </div>
+          <div class="footer-bottom-message">
+            <p>Practical business strategy and intuitive insight for spiritual practitioners ready for their next level.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const nav = document.querySelector(".nav");
+      const navToggle = document.querySelector(".nav-toggle");
+      const reveals = document.querySelectorAll(".reveal");
+      const signup = document.querySelector(".signup");
+      let lastScrollY = window.scrollY;
+
+      function updateNavState() {
+        if (!nav) return;
+        const currentScrollY = window.scrollY;
+        const delta = currentScrollY - lastScrollY;
+
+        nav.classList.toggle("is-scrolled", currentScrollY > 8);
+
+        if (currentScrollY < 80 || nav.classList.contains("is-open")) {
+          nav.classList.remove("is-hidden");
+        } else if (delta > 8) {
+          nav.classList.add("is-hidden");
+        } else if (delta < -8) {
+          nav.classList.remove("is-hidden");
+        }
+
+        if (Math.abs(delta) > 8) {
+          lastScrollY = currentScrollY;
+        }
+      }
+
+      updateNavState();
+      window.addEventListener("scroll", updateNavState, { passive: true });
+
+      if (nav && navToggle) {
+        navToggle.addEventListener("click", () => {
+          const isOpen = nav.classList.toggle("is-open");
+          navToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        nav.querySelectorAll(".nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("is-open");
+            navToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      document.querySelectorAll("[data-faq-list]").forEach((list) => {
+        list.querySelectorAll("details").forEach((item) => {
+          item.addEventListener("toggle", () => {
+            if (!item.open) return;
+            list.querySelectorAll("details[open]").forEach((openItem) => {
+              if (openItem !== item) openItem.removeAttribute("open");
+            });
+          });
+        });
+      });
+
+      if (reduceMotion) {
+        reveals.forEach((node) => node.classList.add("visible"));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.14 }
+        );
+
+        reveals.forEach((node) => observer.observe(node));
+      }
+
+
+      if (signup) {
+        signup.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const status = signup.querySelector(".form-status");
+          const email = signup.querySelector("input[type='email']");
+          if (!email || !email.checkValidity()) {
+            return;
+          }
+          status.textContent = "Sending\u2026";
+          try {
+            const response = await fetch(signup.action, {
+              method: "POST",
+              body: new FormData(signup),
+              headers: { Accept: "application/json" },
+            });
+            if (response.ok) {
+              status.textContent = "You are on the list.";
+              signup.classList.add("is-complete");
+              signup.reset();
+            } else {
+              status.textContent = "Something went wrong. Please try again.";
+            }
+          } catch (error) {
+            status.textContent = "Something went wrong. Please try again.";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

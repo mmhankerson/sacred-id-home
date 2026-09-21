@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>Sacred Healing Journeys Case Study | Sacred Identity Studio</title>
+    <meta
+      name="description"
+      content="How Andrea moved from technology overwhelm to a welcoming website that supports healing sessions, online booking, courses, and continued business growth."
+    />
+    <link rel="canonical" href="https://sacredidentitystudio.com/andrea-case-study" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Sacred Identity Studio" />
+    <meta property="og:url" content="https://sacredidentitystudio.com/andrea-case-study" />
+    <meta property="og:title" content="Sacred Healing Journeys Case Study" />
+    <meta property="og:description" content="From technology overwhelm to a business built to grow." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sacred Healing Journeys Case Study" />
+    <meta name="twitter:description" content="From technology overwhelm to a business built to grow." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Sacred Healing Journeys Case Study",
+        "description": "From technology overwhelm to a business built to grow.",
+        "author": {
+          "@type": "Organization",
+          "name": "Sacred Identity Studio"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sacred Identity Studio",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sacredidentitystudio.com/logo-horizontal.png"
+          }
+        },
+        "mainEntityOfPage": "https://sacredidentitystudio.com/andrea-case-study"
+      }
+    </script>
+    <style>
+      @font-face {
+        font-family: "Fraunces";
+        src: url("/fraunces-300.ttf") format("truetype");
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        src: url("/manrope-400.ttf") format("truetype");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        src: url("/manrope-700.ttf") format("truetype");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      :root {
+        color-scheme: dark;
+        --bg: #3f3f3f;
+        --surface: #313131;
+        --surface-2: #373737;
+        --ink: #f2efe9;
+        --muted: #d4c5a9;
+        --primary: #d4c5a9;
+        --button: #86d1cd;
+        --button-bg: #86d1cd;
+        --on-primary: #111111;
+        --accent: #050b18;
+        --line: rgba(212, 197, 169, 0.25);
+        --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        --radius: 8px;
+        --pill: 9999px;
+        --max: 1240px;
+        --copy: 760px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 84% 5%, rgba(212, 197, 169, 0.13), transparent 26rem),
+          linear-gradient(135deg, rgba(212, 197, 169, 0.055) 0 1px, transparent 1px 16px),
+          var(--bg);
+        background-size: auto, 18px 18px, auto;
+        color: var(--ink);
+        font-family: Manrope, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        pointer-events: none;
+        opacity: 0.045;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--button);
+        outline-offset: 4px;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        padding: 22px 24px;
+        background: rgba(63, 63, 63, 0.88);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-inner {
+        width: min(100%, var(--max));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand img {
+        width: 168px;
+        height: auto;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        color: var(--muted);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .nav-links a:hover {
+        color: var(--ink);
+      }
+
+      .hero,
+      .article,
+      .closing {
+        width: min(calc(100% - 48px), var(--max));
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding: clamp(84px, 12vw, 160px) 0 72px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+        align-items: end;
+        gap: clamp(48px, 8vw, 120px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow,
+      .chapter-number,
+      .outcome-label {
+        color: var(--button);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      blockquote {
+        font-family: Fraunces, Georgia, serif;
+        font-weight: 300;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 920px;
+        margin: 22px 0 30px;
+        font-size: clamp(3.6rem, 8vw, 7.7rem);
+        line-height: 0.91;
+      }
+
+      .hero-deck {
+        max-width: 760px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+      }
+
+      .hero-aside {
+        padding: 28px 0 4px 28px;
+        border-left: 1px solid var(--line);
+      }
+
+      .hero-aside p {
+        margin: 8px 0 26px;
+        color: var(--ink);
+        font-family: Fraunces, Georgia, serif;
+        font-size: 1.55rem;
+        line-height: 1.18;
+      }
+
+      .article {
+        padding: 96px 0 120px;
+      }
+
+      .chapter {
+        display: grid;
+        grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
+        gap: clamp(32px, 7vw, 100px);
+        padding: 72px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .chapter:first-child {
+        padding-top: 0;
+      }
+
+      .chapter-body {
+        max-width: var(--copy);
+      }
+
+      h2 {
+        margin: 0 0 30px;
+        font-size: clamp(2.4rem, 5vw, 4.7rem);
+        line-height: 0.98;
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: #ded6c7;
+      }
+
+      .lead {
+        color: var(--ink);
+        font-size: 1.18rem;
+      }
+
+      blockquote {
+        margin: 42px 0;
+        padding: 30px 0 30px clamp(24px, 4vw, 48px);
+        color: var(--ink);
+        border-left: 2px solid var(--button);
+        font-size: clamp(1.75rem, 3vw, 2.8rem);
+        line-height: 1.14;
+      }
+
+      ul {
+        margin: 28px 0 36px;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--line);
+      }
+
+      li {
+        padding: 16px 0;
+        color: var(--ink);
+        border-bottom: 1px solid var(--line);
+      }
+
+      li::before {
+        content: "—";
+        margin-right: 14px;
+        color: var(--button);
+      }
+
+      .outcome {
+        margin: 52px 0 0;
+        padding: clamp(28px, 5vw, 56px);
+        background: var(--surface);
+        border: 1px solid var(--line);
+      }
+
+      .outcome p {
+        margin: 16px 0 0;
+        color: var(--ink);
+        font-family: Fraunces, Georgia, serif;
+        font-size: clamp(1.8rem, 3.5vw, 3.4rem);
+        line-height: 1.08;
+      }
+
+      .closing {
+        margin-bottom: 64px;
+        padding: clamp(48px, 8vw, 90px);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: end;
+        gap: 40px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+      }
+
+      .closing h2 {
+        max-width: 850px;
+        margin-bottom: 18px;
+      }
+
+      .closing p {
+        max-width: 680px;
+        margin-bottom: 0;
+      }
+
+      .button {
+        min-height: 54px;
+        padding: 0 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #111;
+        background: var(--button);
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      footer {
+        padding: 30px 24px 48px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        text-align: center;
+      }
+
+      @media (max-width: 800px) {
+        .nav-links a:not(:last-child) {
+          display: none;
+        }
+
+        .hero {
+          min-height: auto;
+          grid-template-columns: 1fr;
+          padding-top: 72px;
+        }
+
+        .hero-aside {
+          padding-left: 0;
+          border-left: 0;
+          border-top: 1px solid var(--line);
+        }
+
+        .chapter {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .closing {
+          grid-template-columns: 1fr;
+          align-items: start;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .nav {
+          padding: 16px;
+        }
+
+        .brand img {
+          width: 138px;
+        }
+
+        .hero,
+        .article,
+        .closing {
+          width: min(calc(100% - 32px), var(--max));
+        }
+
+        h1 {
+          font-size: clamp(3rem, 17vw, 4.8rem);
+        }
+
+        .article {
+          padding-top: 64px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/shared-shell.css" />
+  </head>
+  <body>
+    <div id="top" class="page">
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand" href="/" aria-label="Sacred ID home">
+          <img class="brand-logo" src="/logo-horizontal.png" alt="Sacred ID" width="375" height="60" />
+        </a>
+        <div class="nav-links">
+          <a class="nav-mobile-only" href="/">Home</a>
+          <a class="nav-mobile-only" href="/works">Works</a>
+          <a class="nav-mobile-only" href="/about">About</a>
+          <a class="nav-mobile-only" href="/sacred-blueprint">Sacred Blueprint</a>
+          <a class="nav-mobile-only" href="mailto:hello@sacredid.studio">Email</a>
+          <a class="button" href="https://sacredid.bloom.io/fit"><span>Request a Fit Call</span><span class="button-fill" aria-hidden="true"></span></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      </div>
+    </nav>
+
+    <main>
+      <header class="hero">
+        <div>
+          <div class="eyebrow">Sacred Healing Journeys · Case Study</div>
+          <h1>From technology overwhelm to a business built to grow.</h1>
+          <p class="hero-deck">How Andrea created an online home for her healing work, courses, and next chapter.</p>
+        </div>
+        <aside class="hero-aside" aria-label="Case study summary">
+          <span class="outcome-label">The shift</span>
+          <p>A website that clients can find, trust, and use.</p>
+          <span class="outcome-label">Built to support</span>
+          <p>Healing sessions, online booking, courses, and continued growth.</p>
+        </aside>
+      </header>
+
+      <article class="article">
+        <section class="chapter">
+          <div class="chapter-number">01 · Starting point</div>
+          <div class="chapter-body">
+            <h2>A growing vision held back by technology.</h2>
+            <p class="lead">When Andrea began working with Matt, she was transitioning from full-time high school teaching toward a business that brought together her healing work and experience as an educator.</p>
+            <p>She had already created two websites, but neither could support the business she was beginning to envision. They were basic, difficult to update, and lacked online scheduling and course capabilities. Andrea knew she needed something more professional, but she did not know how to make the technology work.</p>
+            <blockquote>“I was trying to figure out how to get a website created that also included the ability for clients to book sessions with me online, as well as a way for me to teach courses through an online platform.”</blockquote>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <div class="chapter-number">02 · The challenge</div>
+          <div class="chapter-body">
+            <h2>Finding someone who understood the technology and the work.</h2>
+            <p class="lead">Technology was only part of the problem.</p>
+            <p>Andrea’s previous website had been created by someone who did not understand spiritual work. Content was added that did not make sense for her business, and requesting corrections became a slow, frustrating process.</p>
+            <blockquote>“It became a nightmare. He would put things on my site that didn’t make any sense in relation to the work I was doing, and then it would take weeks, if not months, to get things changed. It was embarrassing.”</blockquote>
+            <p>Andrea needed more than a web designer. She needed someone who could understand the meaning behind her work, communicate it clearly, and build the systems required to support her services and courses. Meeting Matt at a spiritual show in Mankato gave her the connection she had been looking for.</p>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <div class="chapter-number">03 · The solution</div>
+          <div class="chapter-body">
+            <h2>A website that felt like her and worked for her clients.</h2>
+            <p>Matt helped Andrea create a professional website that communicated her work clearly while preserving the gentle, welcoming feeling she wanted clients to experience.</p>
+            <p>The new site gave visitors a simple way to:</p>
+            <ul>
+              <li>Understand Andrea’s healing work</li>
+              <li>Explore her services and courses</li>
+              <li>Book sessions online</li>
+              <li>Register for educational offerings</li>
+              <li>Navigate the site without confusion</li>
+            </ul>
+            <blockquote>“Early on, I really felt understood. Matt helped design a site that clearly communicates the work I offer, while also reflecting the soft image and welcoming feeling I want people to experience when they visit my site. It’s also very easy to navigate.”</blockquote>
+            <p>The result was not simply a better-looking website. Andrea finally had the practical foundation she needed to expand her work.</p>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <div class="chapter-number">04 · The result</div>
+          <div class="chapter-body">
+            <h2>New possibilities for sessions and courses.</h2>
+            <p>Over the following year, Andrea’s website became an active part of her business. Clients could find her online, schedule sessions themselves, and enroll in courses. Andrea was able to offer experiences she previously did not know how to deliver through technology.</p>
+            <blockquote>“The website was monumental for my growth. Over the last year, I’ve been able to do so much more because my clients can find my site, book an online session, or sign up for a course.”</blockquote>
+            <blockquote>“This has been huge for my expansion. It has allowed me to do things and offer courses that I never imagined I’d be able to figure out how to do.”</blockquote>
+            <div class="outcome">
+              <span class="outcome-label">The clearest result</span>
+              <p>Instead of technology limiting what Andrea could offer, her website began helping her put more of her vision into practice.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <div class="chapter-number">05 · The next phase</div>
+          <div class="chapter-body">
+            <h2>A roadmap for continued growth.</h2>
+            <p>As Andrea’s business evolved, Matt helped her look beyond the original website and consider what the next stage required.</p>
+            <p>Through strategic conversations, an Akashic Records reading, and a focused roadmap, they identified opportunities to streamline her systems, improve the website, and break larger goals into manageable steps.</p>
+            <blockquote>“The roadmap is helping me see where I need to streamline my systems and make a few changes to the site. It’s giving me a scaffolded, clear idea of how I can continue to expand and grow.”</blockquote>
+            <p>Andrea began placing projects on her calendar and dividing them into smaller actions so they would feel less overwhelming. Instead of carrying several possibilities at once, she had a structure for moving forward.</p>
+            <blockquote>“It helped me see areas where I still need growth, as well as some of my blind spots and healing I still need to do. It also gave me comfort around my dad’s passing and helped me not be so hard on myself.”</blockquote>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <div class="chapter-number">06 · The deeper change</div>
+          <div class="chapter-body">
+            <h2>A clearer direction and an ongoing partnership.</h2>
+            <p>Andrea now feels more confident about the direction of her business and more capable of following through on her ideas.</p>
+            <blockquote>“I feel like I have a much clearer direction because of the guidance I’ve been given by Matt.”</blockquote>
+            <p>For Andrea, the relationship did not end when the website launched. As her vision expanded, she continued to have someone who understood both the practical demands of building a business and the nature of spiritual work.</p>
+            <blockquote>“I would tell other practitioners that Matt is not only thorough, accessible, and highly knowledgeable, but he has the added bonus of getting it—meaning spiritual work. He truly understands how to explain what this work is about and incorporate it into a website in a way that makes sense.”</blockquote>
+            <blockquote>“He’s also easygoing, kind, and professional, and he makes people feel really comfortable throughout the entire process—from beginning to end, or really, ongoing. There isn’t necessarily an ‘end’ to the relationship just because the website is built.”</blockquote>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <div class="chapter-number">07 · What it demonstrates</div>
+          <div class="chapter-body">
+            <h2>A digital foundation should make more possible.</h2>
+            <p>Andrea did not need technology for technology’s sake. She needed a digital foundation that could help her bring more of her work into the world.</p>
+            <p>By combining clear messaging, thoughtful design, practical systems, and ongoing strategy, she moved from feeling limited by technology to having a website that supports sessions, courses, and continued growth.</p>
+            <div class="outcome">
+              <span class="outcome-label">A Sacred ID belief</span>
+              <p>The right website does more than represent your work. It gives you the confidence and capability to do more with it.</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <section class="closing" aria-label="Request a fit call">
+        <div>
+          <span class="eyebrow">Your next chapter</span>
+          <h2>Let us find your best next step.</h2>
+          <p>If your expertise has outgrown your website, we can shape a clearer digital home for the work you are ready to do next.</p>
+        </div>
+        <a class="button" href="https://sacredid.bloom.io/fit"><span>Request a Fit Call</span><span class="button-fill" aria-hidden="true"></span></a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-shell">
+        <div class="footer-halves">
+          <div class="footer-left">
+            <a aria-label="Sacred ID home" href="/#top"><img class="footer-logo-small" src="/sacred-ID.gif" alt="Sacred ID" width="3208" height="641" loading="lazy" /></a>
+            <form class="signup" method="POST" action="https://formspree.io/f/xdenweag">
+              <input type="hidden" name="_subject" value="New Sacred ID signup" />
+              <div class="field"><label for="footer-email">Receive Sacred ID updates</label><input id="footer-email" name="email" type="email" placeholder="Email" autocomplete="email" required /></div>
+              <button class="button" type="submit"><span>Join</span><span class="button-fill" aria-hidden="true"></span></button>
+              <p class="footer-note">Your information is never disclosed to third parties.</p><p class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+          <nav class="footer-right" aria-label="Footer navigation">
+            <div class="footer-column"><p class="footer-column-title">Main pages</p><div class="footer-links-column"><a class="footer-link" href="/#top">Home</a><a class="footer-link" href="/works">Works</a><a class="footer-link" href="/about">About</a><a class="footer-link" href="/contact">Contact</a></div></div>
+            <div class="footer-column"><p class="footer-column-title">Offerings</p><div class="footer-links-column"><a class="footer-link" href="/sacred-blueprint">Sacred Blueprint</a><a class="footer-link" href="/momentum-lab">Sacred Momentum Lab</a><a class="footer-link" href="/build-what-is-next">Build What is Next</a><a class="footer-link" href="/site-management">Site Management</a><a class="footer-link" href="/virtual-photo-shoot">Virtual Photo Shoot</a></div></div>
+            <div class="footer-column"><p class="footer-column-title">Contact</p><div class="footer-links-column"><a class="footer-link" href="https://sacredid.bloom.io/fit">Request a Fit Call</a><a class="footer-link" href="mailto:hello@sacredid.studio">Email</a><a class="footer-link" href="https://sacredidentitystudio.com/">sacredID.studio</a></div></div>
+          </nav>
+        </div>
+        <img class="footer-logo-big" src="/sacred-ID.gif" alt="Sacred ID" width="3208" height="641" loading="lazy" />
+        <div class="footer-bottom-tile"><div class="footer-bottom-wrap"><div class="footer-last-block"><div class="footer-rights-wrap"><div class="footer-social-wrap" aria-label="Contact links"><a class="social-link mail-link" href="mailto:hello@sacredid.studio">Email</a></div><span>Copyright 2026 Sacred Identity Studio</span></div></div><span>sacredID.studio</span></div></div>
+        <div class="footer-bottom-message"><p>Practical business strategy and intuitive insight for spiritual practitioners ready for their next level.</p></div>
+      </div>
+    </footer>
+    </div>
+    <script>
+      const nav = document.querySelector(".nav");
+      const navToggle = document.querySelector(".nav-toggle");
+      const signup = document.querySelector(".signup");
+      let lastScrollY = window.scrollY;
+      function updateNavState() {
+        const currentScrollY = window.scrollY;
+        const delta = currentScrollY - lastScrollY;
+        nav.classList.toggle("is-scrolled", currentScrollY > 8);
+        if (currentScrollY < 80 || nav.classList.contains("is-open")) nav.classList.remove("is-hidden");
+        else if (delta > 8) nav.classList.add("is-hidden");
+        else if (delta < -8) nav.classList.remove("is-hidden");
+        if (Math.abs(delta) > 8) lastScrollY = currentScrollY;
+      }
+      window.addEventListener("scroll", updateNavState, { passive: true });
+      navToggle.addEventListener("click", () => { const isOpen = nav.classList.toggle("is-open"); navToggle.setAttribute("aria-expanded", String(isOpen)); });
+      nav.querySelectorAll(".nav-links a").forEach((link) => link.addEventListener("click", () => { nav.classList.remove("is-open"); navToggle.setAttribute("aria-expanded", "false"); }));
+      signup.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const status = signup.querySelector(".form-status");
+        try {
+          const response = await fetch(signup.action, { method: "POST", body: new FormData(signup), headers: { Accept: "application/json" } });
+          status.textContent = response.ok ? "You are on the list." : "Something went wrong. Please try again.";
+          if (response.ok) signup.reset();
+        } catch (error) { status.textContent = "Something went wrong. Please try again."; }
+      });
+    </script>
+  </body>
+</html>
