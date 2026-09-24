@@ -7,5 +7,23 @@
   "assets": {
     "directory": ".",
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "sacredidentitystudio.com/blog",
+      "zone_name": "sacredidentitystudio.com"
+    },
+    {
+      "pattern": "sacredidentitystudio.com/blog/*",
+      "zone_name": "sacredidentitystudio.com"
+    },
+    {
+      "pattern": "sacredidentitystudio.com/articles",
+      "zone_name": "sacredidentitystudio.com"
+    },
+    {
+      "pattern": "sacredidentitystudio.com/articles/*",
+      "zone_name": "sacredidentitystudio.com"
+    }
+  ]
 }
