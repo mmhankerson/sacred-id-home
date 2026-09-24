@@ -1,18 +1,11 @@
-"routes": [
-  {
-    "pattern": "sacredidentitystudio.com/blog*",
-    "zone_name": "sacredidentitystudio.com"
+{
+  "name": "sacred-id-home",
+  "compatibility_date": "2026-09-20",
+  "observability": {
+    "enabled": true
   },
-  {
-    "pattern": "www.sacredidentitystudio.com/blog*",
-    "zone_name": "sacredidentitystudio.com"
-  },
-  {
-    "pattern": "sacredidentitystudio.com/articles*",
-    "zone_name": "sacredidentitystudio.com"
-  },
-  {
-    "pattern": "www.sacredidentitystudio.com/articles*",
-    "zone_name": "sacredidentitystudio.com"
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash"
   }
-],
+}
